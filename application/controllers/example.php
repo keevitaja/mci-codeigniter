@@ -7,8 +7,6 @@
  *
  * by Tanel Tammik - keevitaja@gmail.com - 2012
  *
- * version 1.0
- *
  */
 
 class Example extends CI_Controller {
@@ -20,7 +18,7 @@ class Example extends CI_Controller {
 		$this->load->view('example', $data);
 	}
   
-  function test() {
+	function test() {
 		$data['i18n'] = $this->lang->mci_current();
 		$data['content'] = 'mci_example_2';
 		$data['uri'] = 'example';

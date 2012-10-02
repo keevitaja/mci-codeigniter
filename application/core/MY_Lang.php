@@ -7,8 +7,6 @@
  *
  * by Tanel Tammik - keevitaja@gmail.com - 2012
  *
- * version 1.0
- *
  */
 
 class MY_Lang extends CI_Lang {
