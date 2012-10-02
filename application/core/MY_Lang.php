@@ -39,11 +39,6 @@ class MY_Lang extends CI_Lang {
     return ((array_key_exists($this->mci_segment, $this->mci_languages)) ? $this->mci_segment : $this->mci_default_language);
   }
   
-  // checks, if currently used language is default. returns bool
-  function is_default() {
-    return (($this->mci_current() == $this->mci_default_language) ? TRUE : FALSE);
-  }
-  
   // returns current uri without language segment
   function mci_clean_uri() {
     $ci =& get_instance();
