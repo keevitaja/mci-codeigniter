@@ -6,7 +6,8 @@
 
 ##Description
 
-Multilingual i18n enviroment for CodeIgniter
+Multilingual i18n enviroment for CodeIgniter.
+Language segment for default language can be hidden from uri.
 
 ##Developer
 

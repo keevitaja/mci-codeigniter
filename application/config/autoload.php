@@ -96,7 +96,7 @@ $autoload['config'] = array();
 |
 */
 
-$autoload['language'] = array('mci');
+$autoload['language'] = array();
 
 
 /*

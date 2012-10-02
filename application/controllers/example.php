@@ -10,6 +10,12 @@
  */
 
 class Example extends CI_Controller {
+	function __construct() {
+		parent::__construct();
+		
+		$this->load->language('mci');
+	}
+	
 	function index() {
 		$data['i18n'] = $this->lang->mci_current();
 		$data['content'] = 'mci_example_1';
