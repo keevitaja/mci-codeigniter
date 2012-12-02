@@ -48,7 +48,11 @@
     
     <p><?php echo lang($content); ?></p>
     <p><?php echo lanchor($uri, lang('mci_click')); ?>
-		<p><?php echo anchor(lchange('et')); ?></p>
+		<p>
+			<?php echo anchor(lchange('et'), 'Eesti Keeles'); ?>
+			<br>
+			<?php echo anchor(lchange('en'), 'In English'); ?>
+		</p>
     
     <footer>
       <?php echo lang('mci_footer'); ?>
