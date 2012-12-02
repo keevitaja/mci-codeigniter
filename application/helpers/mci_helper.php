@@ -29,5 +29,12 @@ function langbar() {
   return $ci->lang->mci_language_bar();
 }
 
+// returns uri(s) for different languages, mixed
+function lchange($language = false) {
+	$ci =& get_instance();
+
+	return $ci->lang->mci_change($language);
+}
+
 /* End of file mci_helper.php */
 /* Location: ./application/helpers/mci_helper.php */

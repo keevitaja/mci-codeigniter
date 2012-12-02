@@ -1,6 +1,5 @@
 #Multilingual CI
 
-* Version 1.0
 * [Demo] (http://mci.vebia.ee)
 * [Forum Topic] (http://codeigniter.com/forums/viewthread/225196/)
 
@@ -22,6 +21,7 @@ Language segment for default language can be hidden from uri.
 
 * lanchor() - use instead of anchor() for in-site linking
 * langbar() - displays the language bar
+* lchange() - returns uri(s) for different languages, mixed
 
 ###Methods (MY_Lang.php)
 
@@ -29,6 +29,7 @@ Language segment for default language can be hidden from uri.
 * mci_clean_uri() - returns current uri without language segment
 * mci_make_uri() - returns uri string with language segment
 * mci_language_bar() - returns html language bar
+* mci_change() - returns uri(s) for different languages, mixed
 
 
 

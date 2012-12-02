@@ -89,6 +89,35 @@ class MY_Lang extends CI_Lang {
     
     return sprintf($ci->config->item('mci_wrapper_section'), $html);
   }
+
+	// returns uri(s) for different languages, mixed
+	function mci_change($language = false) {
+		$uri = $this->mci_clean_uri();
+
+		if($language == false) {
+			unset($this->mci_languages[$this->mci_current()]);
+
+			$uris = array();
+
+			foreach(array_keys($this->mci_languages) as $segment) {
+				$uris[] = $segment.'/'.$uri;
+			}
+
+			return $uris;
+		}
+
+		$segments = array_keys($this->mci_languages);
+
+		if( ! in_array($language, $segments)) {
+			return '';
+		}
+
+		$uri = $language.'/'.$uri;
+
+		return $uri;
+	}
+
+
 }
 
 /* End of file MY_Lang.php */

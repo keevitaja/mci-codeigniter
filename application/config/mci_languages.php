@@ -7,8 +7,6 @@
  *
  * by Tanel Tammik - keevitaja@gmail.com - 2012
  *
- * version 1.0
- *
  */
 
 // Supported languages

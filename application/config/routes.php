@@ -43,8 +43,12 @@ $route['404_override'] = '';
 
 // All re-mappings must begin with '^(en|et|ru)' !!!
 
+$route['^((en|et|ru)/)?test/(.+)$'] = "example/test/$3";
+
 $route['^(en|et|ru)/(.+)$'] = "$2";
 $route['^(en|et|ru)$'] = $route['default_controller'];
+
+
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
