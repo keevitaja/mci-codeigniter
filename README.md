@@ -3,6 +3,8 @@
 * [Demo] (http://mci.vebia.ee)
 * [Forum Topic] (http://codeigniter.com/forums/viewthread/225196/)
 
+#### Do not use this even for educational purposes. It would be much smarter to get rid of the language slug in index.php file and define a constant. Then use it in config file. This way it works with every application. No matter what... But if you must use it, then you must!
+
 ##Description
 
 Multilingual i18n enviroment for CodeIgniter.
